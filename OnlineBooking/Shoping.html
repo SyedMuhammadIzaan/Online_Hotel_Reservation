@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Best Clothing</title>
+    <style>
+        #img{
+            position: relative;
+        }
+        #img img{
+            width:100%;
+        }
+        #box{
+            border:2px solid silver;
+            opacity:0.6;
+            background-color: rgb(187, 187, 187);
+            width:35%;
+            height:150px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top:38%;
+            left:35%;
+        }
+        #sales{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .sale_one{
+            border:none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:25%;
+            height:240px;
+        }
+        .sale_one img{
+            border-radius: 10px;
+            width:80%;
+            height:150px;
+            transition:transform 1s;
+        }
+        .sale_two{
+            border:none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            width:22%;
+            height:240px;
+            z-index:2;
+        }
+        .sale_two img{
+            border-radius: 10px;
+            width:70%;
+            height:160px;
+            transition:transform 1s;
+        }
+        .sale_one img:hover,.sale_two img:hover{
+            transform: scale(1.1);
+            z-index:1;
+        }
+        #footer{
+            background-color: grey;
+            border:2px solid grey;
+            color:white;
+            width:100%;
+            height:250px;
+        }
+        #footer_list{
+            padding-top:30px;
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #section_one a,#section_two a{
+            color:white;
+            text-decoration:none;
+            display:block;
+        }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Best Clothing</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#front">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#men">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sale">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html" tabindex="-1">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="front">
+        <div id="img">
+            <img src="../Image/bg.webp" alt="">
+            <div id="box">
+                <h2>Summer & Winter</h2>
+                <button type="button" class="btn btn-info"><a style="text-decoration:none;" href="#men">Shop Now</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+        <h2 id="sale" style="text-align: center;margin-top: 20px;">Sales</h2>
+        <br>
+        <br>
+        <div id="sales">
+            <div class="sale_one">
+                <img src="../Image/sale_pic_1.webp" alt="">
+                <div class="sale_pic_name">
+                <h6>Midi Pleated Skirt</h6><p>$38.65</p>
+            </div>
+            </div>
+            <div class="sale_two">
+                <img src="../Image/sale_pic_3.webp" alt="">
+                <div class="sale_pic_name">
+                <h6>Shopping Bag</h6><p>$50.00</p>
+                </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/shirt1.webp" alt="">
+                <div class="sale_pic_name">
+                <h6>Vintage Frame Eye Glasses</h6><p>$15.29</p>
+                
+            </div>
+            </div>
+        </div>
+      </div>
+      <br>
+        <h2 id="men" style="text-align:center;margin-top: 50px;">Men</h2>
+        <br>
+        <br>
+        <div id="sales">
+            <div class="sale_one">
+                <img src="../Image/men_product-01.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Only Check Trouser</h6><p>$25.50</p>
+            </div>
+            </div>
+            <div class="sale_two">
+                <img src="../Image/men_product-2.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Herschel Supply</h6><p>$63.16</p>
+                </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/men_product-3.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Herschel Supply</h6><p>$63.15</p>
+            </div>
+            </div>
+        </div>
+
+        <h2 id="women" style="text-align:center;margin-top: 50px;">Women</h2>
+        <br>
+        <br>
+        <div id="sales">
+            <div class="sale_one">
+                <img src="../Image/women_product-01.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Esprit Ruffle Shirt</h6><p>$16.64</p>
+            </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-02.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Horschol Supply</h6><p>$35.31</p>
+                </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-03.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Classic Trench Coat</h6><p>$75.00</p>
+            </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-04.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Front Pocket Jumpar</h6><p>$34.75</p>
+            </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-05.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Shirt in Stretch Cotton</h6><p>$52.66</p>
+            </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-06.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Pieces Metallic Printed</h6><p>$18.96</p>
+            </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-7.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Femme T-Shirt in Stripe</h6><p>$25.85</p>
+            </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-8.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>T-Shirt with Sleeve</h6><p>$18.49</p>
+            </div>
+            </div>
+            <div class="sale_one">
+                <img src="../Image/women_product-05.jpg" alt="">
+                <div class="sale_pic_name">
+                <h6>Pretty Little Thing</h6><p>$54.79</p>
+            </div>
+            </div>
+            
+        </div>
+        <button style="margin-left:50%;" type="button" class="btn btn-secondary">Load More</button>
+        <br>
+        <br>
+        <div id="footer">
+            <div class="container">
+                <div id="footer_list">
+                    <div id="section_one">
+                        <h3>Categories</h3>
+                        <a href="#women">Women</a>
+                        <a href="#men">Men</a>
+                        <a href="">Shoes</a>
+                        <a href="">Watches</a>
+                    </div>
+                    <div id="section_two">
+                        <h3>Help</h3>
+                        <a href="">Track Order</a>
+                        <a href="">Returns</a>
+                        <a href="">Shipping</a>
+                        <a href="">FaQ's</a>
+                    </div>
+                    <div id="section_three">
+                        <h3>Get in Touch</h3>
+                        <p>Any questions? Let us know in store at 8th<br> floor, 379 Hudson St, New York, NY 10018 or<br> call us on (+1) 96 716 6879</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p style="margin-left:20%;">Copyright ©2023 All rights reserved | This template is made with  by SmarterWayToMakeWebsite</p>
+            </div>
+        </div>
+</body>
+
+</html>
